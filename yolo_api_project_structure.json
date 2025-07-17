@@ -1,0 +1,23 @@
+{
+    "project_name": "yolo_api_project",
+    "structure": {
+        "app.py": "Flask API本体（物体検出と状態判定）",
+        "requirements.txt": "必要なPythonライブラリ一覧",
+        "uploads/": "画像アップロード用フォルダ（空）",
+        "models/": "YOLOモデル保存用フォルダ（空）",
+        "yolov5/": "YOLOv5コードをクローンして配置（空）",
+        "README.md": "※作成途中でエラー（後ほど補完可能）"
+    },
+    "app.py_content": {
+        "description": "Flaskで /detect エンドポイントを提供",
+        "endpoint": "/detect",
+        "method": "POST",
+        "behavior": [
+            "アップロードされた画像を保存し、YOLOv5で物体検出",
+            "検出された物体の数に応じて以下のように分類：",
+            "0個 → 何もなし",
+            "1〜3個 → やんわり注意",
+            "4個以上 → 注意通告"
+        ]
+    }
+}

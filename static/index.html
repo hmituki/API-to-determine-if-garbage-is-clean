@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOLOv5 Image Detection</title>
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>YOLOv5 Image Detection</h1>
+        <form id="uploadForm">
+            <label for="imageInput">Select an image to upload:</label>
+            <input type="file" id="imageInput" name="image" accept="image/*" required title="Choose an image file">
+            <button type="submit">Upload Image</button>
+        </form>
+        <div id="result">
+            <h2>Detection Result</h2>
+            <p id="status"></p>
+            <img id="resultImage" src="" alt="Result Image">
+        </div>
+    </div>
+    
+<script src="/static/script.js"></script>
+
+</body>
+</html>
+
+
