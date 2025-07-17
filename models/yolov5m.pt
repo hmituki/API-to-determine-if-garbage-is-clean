@@ -1,0 +1,6 @@
+# yolov5m.yaml
+nc: 80
+depth_multiple: 0.67
+width_multiple: 0.75
+anchors: same as yolov5s.yaml
+# backbone and head: same構造、ただし depth/width が大きい
